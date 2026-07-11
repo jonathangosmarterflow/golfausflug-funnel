@@ -1,0 +1,831 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ihre persönliche Südafrika-Golfreise | goHartl golftours</title>
+<meta name="description" content="Kostenloser, individuell erstellter Südafrika-Golfreiseplan: Golfplätze, Safari, Weinregion, Hotels und Preisrahmen. Aus über 20 Jahren Südafrika-Erfahrung von goHartl golftours. In wenigen Minuten per E-Mail.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Ihre persönliche Südafrika-Golfreise. In 2 Minuten geplant.">
+<meta property="og:description" content="Beantworten Sie ein paar Fragen und erhalten Sie kostenlos Ihren individuellen Reiseplan: Golfplätze, Safari, Weinregion, Hotels und Preisrahmen.">
+<meta property="og:site_name" content="goHartl golftours">
+<meta property="og:image" content="assets/hero-1.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%B3%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* Greens - core identity */
+  --golf-green:#99C337; --golf-green-light:#94BA44; --golf-moss:#637E26;
+  --golf-dark:#425612; --sage:#BFCF9C; --green-pale:#E5F2CE;
+  /* Golds - safari warmth */
+  --safari-gold:#E1B863; --gold-amber:#FFC107; --gold-dark:#745516;
+  /* Teals / blues */
+  --teal:#44A1BF; --teal-deep:#22505F; --teal-mid:#2F758D; --navy:#011A46;
+  /* Signal */
+  --red:#AB2039;
+  /* Neutrals */
+  --cream:#F9FAF5; --ink:#212529; --ink-soft:#333333; --muted:#6C757D;
+  --line:#DEE2E6; --white:#ffffff;
+  /* Type */
+  --head:"Judson", Georgia, "Times New Roman", serif;
+  --body:"Source Sans Pro", "Segoe UI", Helvetica, Arial, sans-serif;
+  --shadow:0 10px 30px rgba(66,86,18,.10);
+  --shadow-soft:0 4px 16px rgba(66,86,18,.08);
+  --radius:16px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--cream); color:var(--ink-soft);
+  font-family:var(--body); font-size:18px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--head); color:var(--golf-dark); line-height:1.18; font-weight:700; margin:0 0 .5em}
+p{margin:0 0 1em}
+a{color:var(--teal-mid)}
+img{max-width:100%; display:block}
+.wrap{max-width:1080px; margin:0 auto; padding:0 22px}
+
+/* ---- Header ---- */
+.site-header{
+  background:rgba(249,250,245,.92); backdrop-filter:saturate(1.2) blur(6px);
+  border-bottom:1px solid var(--line); position:sticky; top:0; z-index:40;
+}
+.site-header .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:12px; padding-bottom:12px}
+.site-header img{max-height:56px; width:auto}
+.header-link{font-family:var(--body); font-size:16px; color:var(--golf-moss); text-decoration:none; font-weight:600; white-space:nowrap}
+.header-link:hover{color:var(--golf-dark); text-decoration:underline}
+
+/* ---- Hero ---- */
+.hero{padding:56px 0 40px; position:relative; overflow:hidden}
+.hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:44px; align-items:center}
+.eyebrow{
+  display:inline-flex; align-items:center; gap:8px; font-family:var(--body); font-weight:700;
+  letter-spacing:.06em; text-transform:uppercase; font-size:13.5px; color:var(--golf-moss);
+  background:var(--green-pale); border:1px solid #D6E7B4; padding:7px 14px; border-radius:100px; margin-bottom:20px;
+}
+.hero h1{font-size:clamp(34px, 5vw, 52px); margin-bottom:.35em}
+.hero .lead{font-size:20px; color:var(--ink-soft); max-width:36ch; margin-bottom:26px}
+.hero-media{position:relative}
+.hero-media .card-img{
+  border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);
+  border:6px solid var(--white); transform:rotate(-1.4deg);
+}
+.hero-media .card-img img{aspect-ratio:16/10; object-fit:cover; width:100%}
+.hero-media .badge{
+  position:absolute; bottom:-18px; left:-10px; background:var(--white); border-radius:14px;
+  box-shadow:var(--shadow-soft); padding:12px 16px; display:flex; align-items:center; gap:10px;
+  border:1px solid var(--line); transform:rotate(1.5deg); max-width:230px;
+}
+.hero-media .badge .dot{font-size:26px; line-height:1}
+.hero-media .badge span{font-family:var(--body); font-size:14.5px; color:var(--ink-soft); line-height:1.35}
+.hero-media .badge b{color:var(--golf-dark)}
+
+/* ---- Buttons ---- */
+.btn{
+  font-family:var(--body); font-weight:700; font-size:18px; cursor:pointer;
+  border:none; border-radius:12px; min-height:56px; padding:15px 28px;
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  text-decoration:none; transition:background .18s ease, transform .12s ease, box-shadow .18s ease;
+}
+.btn-primary{background:var(--golf-green); color:var(--golf-dark); box-shadow:0 6px 16px rgba(153,195,55,.35)}
+.btn-primary:hover{background:var(--golf-moss); color:var(--white); transform:translateY(-1px)}
+.btn-ghost{background:transparent; color:var(--golf-moss); border:2px solid var(--sage); min-height:52px}
+.btn-ghost:hover{background:var(--green-pale); border-color:var(--golf-green)}
+.btn-block{width:100%}
+.btn:disabled{opacity:.45; cursor:not-allowed; transform:none; box-shadow:none}
+
+.trust-line{margin-top:18px; font-size:15.5px; color:var(--muted); display:flex; flex-wrap:wrap; gap:6px 18px}
+.trust-line span{display:inline-flex; align-items:center; gap:7px}
+
+/* ---- Wizard ---- */
+.wizard-section{padding:20px 0 64px}
+.wizard{
+  background:var(--white); border-radius:22px; box-shadow:var(--shadow);
+  border:1px solid #EDEFE6; max-width:760px; margin:0 auto; overflow:hidden;
+}
+.wizard-top{padding:22px 30px 0}
+.progress-row{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:6px}
+.progress-label{font-family:var(--body); font-size:14px; font-weight:700; color:var(--golf-moss); letter-spacing:.03em}
+.back-btn{
+  background:none; border:none; color:var(--muted); font-family:var(--body); font-size:15px;
+  cursor:pointer; padding:6px 8px; border-radius:8px; display:inline-flex; align-items:center; gap:6px;
+}
+.back-btn:hover{color:var(--golf-dark); background:var(--cream)}
+.back-btn[hidden]{display:none}
+.progress-track{height:6px; background:var(--green-pale); border-radius:100px; overflow:hidden}
+.progress-fill{height:100%; width:11%; background:var(--golf-green); border-radius:100px; transition:width .4s cubic-bezier(.4,0,.2,1)}
+
+.wizard-body{padding:26px 30px 32px; position:relative}
+.step{display:none; animation:fade .38s ease}
+.step.active{display:block}
+@keyframes fade{from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:none}}
+.step h2{font-size:clamp(24px,3.4vw,31px); margin-bottom:.35em}
+.step .hint{font-size:16px; color:var(--muted); margin:-2px 0 20px}
+.step .microcopy{font-size:14.5px; color:var(--muted); margin-top:16px; display:flex; gap:8px; align-items:flex-start}
+.step .microcopy .lock{color:var(--golf-moss)}
+
+/* text inputs */
+.field{margin-bottom:16px}
+.field label{display:block; font-family:var(--body); font-weight:600; font-size:16px; color:var(--golf-dark); margin-bottom:6px}
+.field .opt{color:var(--muted); font-weight:400}
+input[type=text], input[type=email]{
+  width:100%; font-family:var(--body); font-size:18px; color:var(--ink);
+  padding:14px 16px; border:1.5px solid var(--line); border-radius:12px; background:var(--white);
+  transition:border-color .15s ease, box-shadow .15s ease;
+}
+input[type=text]:focus, input[type=email]:focus{
+  outline:none; border-color:var(--golf-green); box-shadow:0 0 0 3px rgba(153,195,55,.18);
+}
+input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
+.err{color:var(--red); font-size:14.5px; margin-top:5px; display:none}
+.err.show{display:block}
+
+/* chips */
+.chips{display:flex; flex-wrap:wrap; gap:11px; margin-bottom:4px}
+.chip{
+  font-family:var(--body); font-size:17px; font-weight:600; color:var(--golf-dark);
+  background:var(--white); border:1.5px solid var(--sage); border-radius:12px;
+  padding:13px 20px; min-height:52px; cursor:pointer; display:inline-flex; align-items:center; gap:8px;
+  transition:all .15s ease; text-align:left; line-height:1.25;
+}
+.chip:hover{border-color:var(--golf-green); background:var(--green-pale)}
+.chip[aria-pressed=true]{
+  background:var(--golf-green); border-color:var(--golf-moss); color:var(--golf-dark);
+  box-shadow:0 4px 12px rgba(153,195,55,.28);
+}
+.chip .num{
+  width:26px; height:26px; border-radius:50%; background:var(--green-pale); color:var(--golf-moss);
+  font-size:14px; display:inline-flex; align-items:center; justify-content:center; font-weight:700;
+}
+.year-toggle{display:inline-flex; gap:8px; margin-top:18px; align-items:center; flex-wrap:wrap}
+.year-toggle .yt-label{font-size:15px; color:var(--muted); margin-right:4px}
+.chip-sm{min-height:44px; padding:9px 16px; font-size:16px}
+.other-input{margin-top:12px; display:none}
+.other-input.show{display:block}
+.info-inline{font-size:14.5px; color:var(--teal-mid); margin-top:14px; display:inline-flex; gap:7px; align-items:flex-start}
+
+.wizard-actions{display:flex; gap:12px; margin-top:26px; align-items:center; flex-wrap:wrap}
+.wizard-actions .btn-primary{flex:1 1 auto; min-width:180px}
+.skip-btn{
+  background:none; border:none; color:var(--muted); font-family:var(--body); font-size:16px;
+  cursor:pointer; text-decoration:underline; padding:10px 6px;
+}
+.skip-btn:hover{color:var(--golf-dark)}
+
+/* success */
+#screen-success{display:none; text-align:center; padding:44px 30px 48px; animation:fade .4s ease}
+#screen-success.active{display:block}
+.check{
+  width:88px; height:88px; margin:0 auto 22px; border-radius:50%;
+  background:var(--golf-green); display:flex; align-items:center; justify-content:center;
+  box-shadow:0 10px 26px rgba(153,195,55,.4);
+}
+.check svg{width:46px; height:46px}
+#screen-success h2{font-size:clamp(26px,4vw,34px)}
+#screen-success p{max-width:44ch; margin:0 auto 1em; color:var(--ink-soft)}
+.success-note{font-size:15.5px; color:var(--muted); background:var(--cream); border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:20px auto; max-width:46ch}
+
+/* ---- Benefits ---- */
+.benefits{padding:8px 0 56px}
+.section-head{text-align:center; max-width:44ch; margin:0 auto 34px}
+.section-head .rule{width:52px; height:3px; background:var(--safari-gold); border-radius:2px; margin:0 auto 18px}
+.benefits-grid, .trip-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+.b-card{
+  background:var(--white); border:1px solid #EDEFE6; border-radius:var(--radius); padding:26px 24px;
+  box-shadow:var(--shadow-soft);
+}
+.b-card .ico{font-size:30px; margin-bottom:12px}
+.b-card h3{font-size:20px; margin-bottom:.35em}
+.b-card p{font-size:16px; color:var(--ink-soft); margin:0}
+
+/* ---- Group trip strip ---- */
+.group-strip{background:var(--green-pale); padding:60px 0; border-top:1px solid #E1EBCB; border-bottom:1px solid #E1EBCB}
+.group-strip .section-head h2{margin-bottom:.3em}
+.group-strip .section-head p{color:var(--golf-moss); font-size:18px}
+.trip-card{
+  background:var(--white); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-soft);
+  border:1px solid #E7EEDA; display:flex; flex-direction:column; text-decoration:none; color:inherit;
+  transition:transform .16s ease, box-shadow .16s ease;
+}
+.trip-card:hover{transform:translateY(-3px); box-shadow:var(--shadow)}
+.trip-card .thumb{aspect-ratio:16/10; overflow:hidden}
+.trip-card .thumb img{width:100%; height:100%; object-fit:cover}
+.trip-card .body{padding:18px 20px 20px}
+.trip-card h3{font-size:19px; margin-bottom:8px; line-height:1.25}
+.trip-card .meta{font-size:15px; color:var(--muted); margin-bottom:10px}
+.trip-card .price{font-family:var(--head); font-size:21px; color:var(--golf-moss); font-weight:700}
+.trip-card .price small{font-family:var(--body); font-size:13px; color:var(--muted); font-weight:400}
+.trip-card .go{margin-top:12px; font-family:var(--body); font-weight:700; font-size:15px; color:var(--teal-mid)}
+.advantages{
+  margin:34px auto 0; max-width:820px; text-align:center; font-size:16.5px; color:var(--golf-dark);
+  background:var(--white); border:1px solid #E7EEDA; border-radius:14px; padding:18px 22px;
+}
+.advantages b{color:var(--golf-moss)}
+
+/* ---- Footer ---- */
+.site-footer{background:var(--golf-dark); color:#E7EED9; padding:46px 0 34px}
+.footer-grid{display:grid; grid-template-columns:1.2fr 1fr; gap:30px; align-items:start}
+.site-footer img{max-height:52px; width:auto; margin-bottom:14px}
+.site-footer p{color:#CBD7B2; font-size:15.5px; margin:0 0 .5em}
+.footer-links{display:flex; flex-wrap:wrap; gap:8px 20px; margin:10px 0}
+.footer-links a{color:#E7EED9; text-decoration:none; font-size:15.5px; border-bottom:1px solid rgba(231,238,217,.35)}
+.footer-links a:hover{color:var(--white); border-color:var(--white)}
+.footer-contact a{color:var(--safari-gold); text-decoration:none}
+.footer-fine{margin-top:26px; padding-top:18px; border-top:1px solid rgba(231,238,217,.2); font-size:13.5px; color:#A9B891}
+
+/* ---- Responsive ---- */
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr; gap:34px}
+  .hero-media{order:-1; max-width:460px}
+  .hero .lead{max-width:none}
+  .benefits-grid, .trip-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .wizard-top{padding:18px 20px 0}
+  .wizard-body{padding:22px 20px 26px}
+  .hero{padding:40px 0 30px}
+  .wizard-actions .btn-primary{width:100%; flex-basis:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto !important}
+  .step,.hero-media .card-img,#screen-success{animation:none !important; transition:none !important; transform:none !important}
+  .progress-fill{transition:none}
+}
+</style>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" aria-label="goHartl golftours"><img src="assets/logo-color.png" alt="goHartl golftours"></a>
+    <a class="header-link" href="https://www.golfausflug.de/" target="_blank" rel="noopener">golfausflug.de &rarr;</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">&#9971; Ihr Reiseplan &middot; kostenlos &amp; individuell</span>
+        <h1>Ihre persönliche Südafrika-Golfreise. In 2 Minuten geplant.</h1>
+        <p class="lead">Beantworten Sie ein paar Fragen und erhalten Sie kostenlos Ihren individuellen Reiseplan: Golfplätze, Safari, Weinregion, Hotels und Preisrahmen. Zusammengestellt aus über 20 Jahren Südafrika-Erfahrung.</p>
+        <a href="#planer" class="btn btn-primary" id="hero-cta">Jetzt kostenlosen Reiseplan erstellen &rarr;</a>
+        <div class="trust-line">
+          <span>&#9971; Persönlich geprüft</span>
+          <span>&#129409; Von echten Reisen inspiriert</span>
+          <span>&#9993;&#65039; In wenigen Minuten per E-Mail</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="card-img">
+          <img src="assets/hero-1.jpg" alt="Golfplatz an der Küste Südafrikas, Pinnacle Point" loading="eager" width="1024" height="576">
+        </div>
+        <div class="badge">
+          <span class="dot">&#127942;</span>
+          <span><b>Über 20 Jahre</b> Südafrika, geführt von PGA-Pro Gerd Schönberg</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WIZARD -->
+  <section class="wizard-section" id="planer">
+    <div class="wizard" id="wizard">
+      <div class="wizard-top">
+        <div class="progress-row">
+          <button type="button" class="back-btn" id="backBtn" hidden>&larr; Zurück</button>
+          <span class="progress-label" id="progressLabel">Frage 1 von 9</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+
+      <div class="wizard-body">
+
+        <!-- STEP 1 : capture -->
+        <div class="step active" data-step="1" data-type="form">
+          <h2>Wohin dürfen wir Ihren persönlichen Reiseplan senden?</h2>
+          <p class="hint">Ihr Plan kommt in wenigen Minuten bequem per E-Mail.</p>
+          <div class="field">
+            <label for="f_vorname">Vorname</label>
+            <input type="text" id="f_vorname" autocomplete="given-name" placeholder="Ihr Vorname">
+            <div class="err" id="err_vorname">Bitte geben Sie Ihren Vornamen ein.</div>
+          </div>
+          <div class="field">
+            <label for="f_nachname">Nachname <span class="opt">(optional)</span></label>
+            <input type="text" id="f_nachname" autocomplete="family-name" placeholder="Ihr Nachname">
+          </div>
+          <div class="field">
+            <label for="f_email">E-Mail</label>
+            <input type="email" id="f_email" autocomplete="email" placeholder="name@beispiel.de" inputmode="email">
+            <div class="err" id="err_email">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+          </div>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-next>Weiter</button>
+          </div>
+          <p class="microcopy"><span class="lock">&#128274;</span> 100 % kostenlos &amp; unverbindlich. Keine Werbeflut, versprochen.</p>
+        </div>
+
+        <!-- STEP 2 : Reisezeitraum -->
+        <div class="step" data-step="2" data-type="single" data-key="reisezeitraum">
+          <h2>Wann möchten Sie reisen?</h2>
+          <p class="hint">Beste Reisezeit für Südafrika: Oktober bis April.</p>
+          <div class="chips" data-single>
+            <button type="button" class="chip" data-val="Oktober">Oktober</button>
+            <button type="button" class="chip" data-val="November">November</button>
+            <button type="button" class="chip" data-val="Dezember">Dezember</button>
+            <button type="button" class="chip" data-val="Januar">Januar</button>
+            <button type="button" class="chip" data-val="Februar">Februar</button>
+            <button type="button" class="chip" data-val="März">März</button>
+            <button type="button" class="chip" data-val="Noch flexibel">Noch flexibel</button>
+          </div>
+          <div class="year-toggle" id="yearToggle">
+            <span class="yt-label">Jahr:</span>
+            <button type="button" class="chip chip-sm" data-year="2026" aria-pressed="true">2026</button>
+            <button type="button" class="chip chip-sm" data-year="2027">2027</button>
+          </div>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-next disabled>Weiter</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 : Reisedauer -->
+        <div class="step" data-step="3" data-type="single" data-key="reisedauer">
+          <h2>Wie viele Tage haben Sie Zeit?</h2>
+          <div class="chips" data-single>
+            <button type="button" class="chip" data-val="7 bis 10 Tage">7 bis 10 Tage</button>
+            <button type="button" class="chip" data-val="11 bis 14 Tage">11 bis 14 Tage</button>
+            <button type="button" class="chip" data-val="15+ Tage">15+ Tage</button>
+            <button type="button" class="chip" data-val="Noch offen">Noch offen</button>
+          </div>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-next disabled>Weiter</button>
+          </div>
+        </div>
+
+        <!-- STEP 4 : Abflughafen -->
+        <div class="step" data-step="4" data-type="single" data-key="abflughafen">
+          <h2>Von wo fliegen Sie ab?</h2>
+          <div class="chips" data-single>
+            <button type="button" class="chip" data-val="Frankfurt">Frankfurt</button>
+            <button type="button" class="chip" data-val="München">München</button>
+            <button type="button" class="chip" data-val="Zürich">Zürich</button>
+            <button type="button" class="chip" data-val="Wien">Wien</button>
+            <button type="button" class="chip" data-val="Düsseldorf">Düsseldorf</button>
+            <button type="button" class="chip" data-val="Anderer" data-other>Anderer</button>
+          </div>
+          <div class="other-input" id="other_abflughafen">
+            <input type="text" placeholder="Ihr Wunsch-Abflughafen" data-other-input>
+          </div>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-next disabled>Weiter</button>
+          </div>
+        </div>
+
+        <!-- STEP 5 : Golf-Frequenz -->
+        <div class="step" data-step="5" data-type="single" data-key="golffrequenz">
+          <h2>Wie oft möchten Sie Golf spielen?</h2>
+          <div class="chips" data-single>
+            <button type="button" class="chip" data-val="So oft wie möglich">So oft wie möglich &#9971;</button>
+            <button type="button" class="chip" data-val="Etwa jeden 2. Tag">Etwa jeden 2. Tag</button>
+            <button type="button" class="chip" data-val="Entspannt: 3 bis 4 Runden">Entspannt: 3 bis 4 Runden</button>
+            <button type="button" class="chip" data-val="Bin noch unsicher">Bin noch unsicher</button>
+          </div>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-next disabled>Weiter</button>
+          </div>
+        </div>
+
+        <!-- STEP 6 : Interessen (multi) -->
+        <div class="step" data-step="6" data-type="multi" data-key="interessen">
+          <h2>Was darf auf Ihrer Reise nicht fehlen?</h2>
+          <p class="hint">Mehrfachauswahl möglich.</p>
+          <div class="chips" data-multi>
+            <button type="button" class="chip" data-val="Safari &amp; Big Five">Safari &amp; Big Five &#129409;</button>
+            <button type="button" class="chip" data-val="Weinregion &amp; Genuss">Weinregion &amp; Genuss &#127863;</button>
+            <button type="button" class="chip" data-val="Wale in Hermanus">Wale in Hermanus &#128011;</button>
+            <button type="button" class="chip" data-val="Kapstadt &amp; Tafelberg">Kapstadt &amp; Tafelberg</button>
+            <button type="button" class="chip" data-val="Gardenroute">Gardenroute</button>
+            <button type="button" class="chip" data-val="Strand &amp; Erholung">Strand &amp; Erholung &#127958;</button>
+            <button type="button" class="chip" data-val="Kulinarik &amp; Restaurants">Kulinarik &amp; Restaurants</button>
+          </div>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-next disabled>Weiter</button>
+          </div>
+        </div>
+
+        <!-- STEP 7 : Reisebegleitung -->
+        <div class="step" data-step="7" data-type="single" data-key="reisebegleitung">
+          <h2>Wer reist mit?</h2>
+          <div class="chips" data-single>
+            <button type="button" class="chip" data-val="Ich reise allein">Ich reise allein</button>
+            <button type="button" class="chip" data-val="Zu zweit">Zu zweit</button>
+            <button type="button" class="chip" data-val="Mit Freunden">Mit Freunden</button>
+            <button type="button" class="chip" data-val="Unsere Golfgruppe (5+)">Unsere Golfgruppe (5+)</button>
+          </div>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-next disabled>Weiter</button>
+          </div>
+        </div>
+
+        <!-- STEP 8 : Mobilität -->
+        <div class="step" data-step="8" data-type="single" data-key="mobilitaet">
+          <h2>Möchten Sie selbst fahren?</h2>
+          <div class="chips" data-single>
+            <button type="button" class="chip" data-val="Mietwagen, ich fahre gern selbst">Mietwagen, ich fahre gern selbst</button>
+            <button type="button" class="chip" data-val="Lieber gefahren werden">Lieber gefahren werden</button>
+            <button type="button" class="chip" data-val="Bin unsicher">Bin unsicher</button>
+          </div>
+          <p class="info-inline"><span>&#8505;&#65039;</span> Gut zu wissen: In Südafrika herrscht Linksverkehr.</p>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-next disabled>Weiter</button>
+          </div>
+        </div>
+
+        <!-- STEP 9 : optional -->
+        <div class="step" data-step="9" data-type="optional">
+          <h2>Fast geschafft: noch zwei optionale Angaben</h2>
+          <p class="hint">Damit wird Ihr Plan noch genauer. Sie können diesen Schritt auch überspringen.</p>
+          <div class="field">
+            <label for="f_hcp">Spielstärke / Handicap <span class="opt">(optional)</span></label>
+            <input type="text" id="f_hcp" placeholder="z. B. Handicap 24 oder Platzreife">
+          </div>
+          <div class="field">
+            <label>Budget pro Person <span class="opt">(optional)</span></label>
+            <div class="chips" data-single data-key="budget">
+              <button type="button" class="chip" data-val="bis 2.500 €">bis 2.500 &euro;</button>
+              <button type="button" class="chip" data-val="2.500 bis 4.000 €">2.500 bis 4.000 &euro;</button>
+              <button type="button" class="chip" data-val="4.000 bis 6.000 €">4.000 bis 6.000 &euro;</button>
+              <button type="button" class="chip" data-val="Nach oben offen">Nach oben offen</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f_notes">Besondere Wünsche? <span class="opt">(optional)</span></label>
+            <input type="text" id="f_notes" placeholder="z. B. bestimmter Golfplatz, Anlass, Wunschhotel">
+          </div>
+          <div class="wizard-actions">
+            <button type="button" class="btn btn-primary" data-submit>Reiseplan anfordern &rarr;</button>
+            <button type="button" class="skip-btn" data-skip>Überspringen</button>
+          </div>
+        </div>
+
+        <!-- SUCCESS -->
+        <div id="screen-success">
+          <div class="check" aria-hidden="true">
+            <svg viewBox="0 0 52 52"><path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M14 27l8 8 16-18"></path></svg>
+          </div>
+          <h2>Vielen Dank, <span id="successName">Sie</span>! Ihr persönlicher Südafrika-Reiseplan wird jetzt erstellt.</h2>
+          <p>Sie erhalten ihn in wenigen Minuten per E-Mail (Absender: Golfausflug Südafrika-Reiseplaner). Schauen Sie ggf. im Spam-Ordner nach. Antworten Sie einfach auf die E-Mail, um Ihren Plan anzupassen, so oft Sie möchten.</p>
+          <div class="success-note" id="successNote" hidden></div>
+          <a href="https://www.golfausflug.de/alle-golfreisen/" target="_blank" rel="noopener" class="btn btn-ghost">Unsere begleiteten Gruppenreisen ansehen</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <div class="wrap">
+      <div class="benefits-grid">
+        <div class="b-card">
+          <div class="ico">&#127919;</div>
+          <h3>100 % auf Sie zugeschnitten</h3>
+          <p>Kein Katalog von der Stange. Ihr Plan entsteht rund um Ihre Wünsche, Ihre Zeit und Ihr Tempo.</p>
+        </div>
+        <div class="b-card">
+          <div class="ico">&#9971;</div>
+          <h3>Aus echten Reisen</h3>
+          <p>15+ Golfplätze, erprobte Hotels und echte Preise, gesammelt auf über 20 Jahren Südafrika-Reisen.</p>
+        </div>
+        <div class="b-card">
+          <div class="ico">&#9993;&#65039;</div>
+          <h3>Kostenlos &amp; unverbindlich</h3>
+          <p>Ihr Plan kostet nichts. Antworten Sie einfach per E-Mail, um ihn gemeinsam zu verfeinern.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROUP TRIP STRIP -->
+  <section class="group-strip">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="rule"></div>
+        <h2>Lieber alles aus einer Hand?</h2>
+        <p>Unsere begleiteten Gruppenreisen nach Südafrika:</p>
+      </div>
+      <div class="trip-grid">
+        <a class="trip-card" href="https://www.golfausflug.de/golfreisen/golf-wein-wale-safari/" target="_blank" rel="noopener">
+          <div class="thumb"><img src="assets/group.jpg" alt="Golfgruppe in Südafrika" loading="lazy"></div>
+          <div class="body">
+            <h3>Golf, Wein, Wale &amp; Safari</h3>
+            <div class="meta">14 Tage &middot; Kap-Region &amp; Garden Route</div>
+            <div class="price">ab 3.090 &euro; <small>p. P., Landleistung</small></div>
+            <div class="go">Reise ansehen &rarr;</div>
+          </div>
+        </a>
+        <a class="trip-card" href="https://www.golfausflug.de/golfreisen/golf-wein-safari-gardenroute-iii/" target="_blank" rel="noopener">
+          <div class="thumb"><img src="assets/hero-1.jpg" alt="Küsten-Golfplatz an der Garden Route" loading="lazy"></div>
+          <div class="body">
+            <h3>Golf, Wein &amp; Safari Gardenroute</h3>
+            <div class="meta">14 Tage &middot; Garden Route &amp; Safari</div>
+            <div class="price">ab 3.590 &euro; <small>p. P., Landleistung</small></div>
+            <div class="go">Reise ansehen &rarr;</div>
+          </div>
+        </a>
+        <a class="trip-card" href="https://www.golfausflug.de/golfreisen/safari-golfreise-zum-krugerpark/" target="_blank" rel="noopener">
+          <div class="thumb"><img src="assets/safari.jpg" alt="Safari im Krügerpark, Südafrika" loading="lazy"></div>
+          <div class="body">
+            <h3>Von Sun City zum Krügerpark</h3>
+            <div class="meta">14 Tage &middot; Safari-Premium-Route</div>
+            <div class="price">ab 4.865 &euro; <small>p. P., Landleistung</small></div>
+            <div class="go">Reise ansehen &rarr;</div>
+          </div>
+        </a>
+      </div>
+      <p class="advantages">Die Vorteile der Gruppenreise: <b>Reisebus statt Mietwagen</b>, Weinprobe ohne selbst zu fahren, echte Geselligkeit in kleiner Runde, null Planungsstress und persönliche <b>PGA-Begleitung durch Gerd Schönberg</b>.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="assets/logo-white.png" alt="goHartl golftours">
+      <p>Ein Service von goHartl golftours &middot; Gerd Schönberg</p>
+      <p class="footer-contact">
+        <a href="mailto:info@golfausflug.de">info@golfausflug.de</a> &middot;
+        <a href="tel:+4985329264018">+49 8532 92 640 18</a>
+      </p>
+      <div class="footer-links">
+        <a href="https://www.golfausflug.de/impressum/" target="_blank" rel="noopener">Impressum</a>
+        <a href="https://www.golfausflug.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a>
+        <a href="https://www.golfausflug.de/" target="_blank" rel="noopener">golfausflug.de</a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-fine">KI-gestützte Reiseplanung. Jeder Plan wird auf Basis echter goHartl-Reisen erstellt und persönlich geprüft. Preise verstehen sich als Circa-Rahmen pro Person, Landleistung ohne Flüge.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSflJBmPvw3E-FntcvpRy8hMdk0LVd5LNkJFpFbyts1xQwzMQw/formResponse";
+  var ENTRY = {
+    vorname:"entry.2069514400", nachname:"entry.1406289641", email:"entry.387873407",
+    reisezeitraum:"entry.361019415", reisedauer:"entry.1675194637", abflughafen:"entry.904892077",
+    golffrequenz:"entry.2118143335", interessen:"entry.2071607350", reisebegleitung:"entry.613296145",
+    mobilitaet:"entry.1266984957", spielstaerke:"entry.383941584", budget:"entry.990752376", anmerkungen:"entry.983901221"
+  };
+
+  var data = {};
+  var year = "2026";
+  var partialSent = false;
+  var steps = Array.prototype.slice.call(document.querySelectorAll('.step'));
+  var total = steps.length; // 9
+  var idx = 0;
+  var fill = document.getElementById('progressFill');
+  var label = document.getElementById('progressLabel');
+  var backBtn = document.getElementById('backBtn');
+  var successScreen = document.getElementById('screen-success');
+
+  function decode(s){ var t=document.createElement('textarea'); t.innerHTML=s; return t.value; }
+
+  function show(i){
+    steps.forEach(function(st,n){ st.classList.toggle('active', n===i); });
+    successScreen.classList.remove('active');
+    idx = i;
+    var pct = Math.round(((i)/(total-1))*100);
+    fill.style.width = Math.max(11, pct===0?11:pct) + "%";
+    label.textContent = "Frage " + (i+1) + " von " + total;
+    backBtn.hidden = (i===0);
+    var top = document.getElementById('planer').getBoundingClientRect().top + window.pageYOffset - 80;
+    if(i>0) window.scrollTo({top:top, behavior:'smooth'});
+    var focusEl = steps[i].querySelector('input, .chip');
+    if(focusEl && i>0) { /* leave focus to user on chips */ }
+  }
+
+  function next(){ if(idx < total-1) show(idx+1); }
+  function goSuccess(){
+    steps.forEach(function(st){ st.classList.remove('active'); });
+    successScreen.classList.add('active');
+    fill.style.width = "100%";
+    label.textContent = "Fertig";
+    backBtn.hidden = true;
+    document.getElementById('successName').textContent = data.vorname ? data.vorname : "Sie";
+    var top = document.getElementById('planer').getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({top:top, behavior:'smooth'});
+  }
+
+  // ---- validation for step 1 ----
+  function validEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
+  function validateStep1(){
+    var vn = document.getElementById('f_vorname');
+    var em = document.getElementById('f_email');
+    var ok = true;
+    if(!vn.value.trim()){ vn.classList.add('invalid'); document.getElementById('err_vorname').classList.add('show'); ok=false; }
+    else { vn.classList.remove('invalid'); document.getElementById('err_vorname').classList.remove('show'); }
+    if(!validEmail(em.value.trim())){ em.classList.add('invalid'); document.getElementById('err_email').classList.add('show'); ok=false; }
+    else { em.classList.remove('invalid'); document.getElementById('err_email').classList.remove('show'); }
+    if(ok){
+      data.vorname = vn.value.trim();
+      data.nachname = document.getElementById('f_nachname').value.trim();
+      data.email = em.value.trim();
+      sendPartial();
+    }
+    return ok;
+  }
+
+  // ---- chip logic ----
+  document.querySelectorAll('[data-single]').forEach(function(group){
+    var key = group.getAttribute('data-key') || group.closest('.step').getAttribute('data-key');
+    var stepEl = group.closest('.step');
+    group.querySelectorAll('.chip').forEach(function(chip){
+      chip.addEventListener('click', function(){
+        group.querySelectorAll('.chip').forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+        chip.setAttribute('aria-pressed','true');
+        var val = decode(chip.getAttribute('data-val'));
+        // other-input handling (abflughafen)
+        var otherWrap = stepEl.querySelector('.other-input');
+        if(chip.hasAttribute('data-other')){
+          if(otherWrap){ otherWrap.classList.add('show'); var oi=otherWrap.querySelector('[data-other-input]'); if(oi) oi.focus(); }
+          data[key] = ""; // wait for text
+        } else {
+          if(otherWrap) otherWrap.classList.remove('show');
+          data[key] = val;
+        }
+        refreshStep(stepEl);
+      });
+    });
+  });
+
+  document.querySelectorAll('[data-multi]').forEach(function(group){
+    var stepEl = group.closest('.step');
+    var key = stepEl.getAttribute('data-key');
+    group.querySelectorAll('.chip').forEach(function(chip){
+      chip.addEventListener('click', function(){
+        var on = chip.getAttribute('aria-pressed')==='true';
+        chip.setAttribute('aria-pressed', on?'false':'true');
+        var vals = [];
+        group.querySelectorAll('.chip[aria-pressed=true]').forEach(function(c){ vals.push(decode(c.getAttribute('data-val'))); });
+        data[key] = vals.join(", ");
+        refreshStep(stepEl);
+      });
+    });
+  });
+
+  // other-input typing
+  document.querySelectorAll('[data-other-input]').forEach(function(inp){
+    var stepEl = inp.closest('.step');
+    var key = stepEl.getAttribute('data-key');
+    inp.addEventListener('input', function(){ data[key] = inp.value.trim(); refreshStep(stepEl); });
+  });
+
+  // year toggle
+  var yToggle = document.getElementById('yearToggle');
+  if(yToggle){
+    yToggle.querySelectorAll('[data-year]').forEach(function(b){
+      b.addEventListener('click', function(){
+        yToggle.querySelectorAll('[data-year]').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+        b.setAttribute('aria-pressed','true');
+        year = b.getAttribute('data-year');
+        refreshStep(document.querySelector('[data-step="2"]'));
+      });
+    });
+  }
+
+  function stepAnswered(stepEl){
+    var type = stepEl.getAttribute('data-type');
+    if(type==='optional' || type==='form') return true;
+    var key = stepEl.getAttribute('data-key');
+    return !!(data[key] && data[key].length);
+  }
+  function refreshStep(stepEl){
+    var btn = stepEl.querySelector('[data-next]');
+    if(btn) btn.disabled = !stepAnswered(stepEl);
+  }
+
+  // ---- build final reisezeitraum ----
+  function composeTravel(){
+    var base = data.reisezeitraum_month || "";
+    if(base && base !== "Noch flexibel"){ return base + " " + year; }
+    return base;
+  }
+  // capture month separately for step 2
+  var step2 = document.querySelector('[data-step="2"]');
+  step2.querySelectorAll('[data-single] .chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      data.reisezeitraum_month = decode(chip.getAttribute('data-val'));
+      data.reisezeitraum = composeTravel();
+      refreshStep(step2);
+    });
+  });
+  // keep reisezeitraum synced when year changes
+  var origComposeSync = function(){ data.reisezeitraum = composeTravel(); };
+  if(yToggle){ yToggle.querySelectorAll('[data-year]').forEach(function(b){ b.addEventListener('click', origComposeSync); }); }
+
+  // ---- navigation buttons ----
+  document.querySelectorAll('[data-next]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var stepEl = b.closest('.step');
+      if(stepEl.getAttribute('data-type')==='form'){ if(!validateStep1()) return; }
+      else if(!stepAnswered(stepEl)) return;
+      next();
+    });
+  });
+  backBtn.addEventListener('click', function(){ if(idx>0) show(idx-1); });
+
+  document.querySelector('[data-skip]').addEventListener('click', function(){ submitAll(); });
+  document.querySelector('[data-submit]').addEventListener('click', function(){
+    data.spielstaerke = document.getElementById('f_hcp').value.trim();
+    data.anmerkungen = document.getElementById('f_notes').value.trim();
+    submitAll();
+  });
+
+  // Enter-to-continue
+  document.getElementById('wizard').addEventListener('keydown', function(e){
+    if(e.key!=='Enter') return;
+    var stepEl = steps[idx];
+    if(!stepEl) return;
+    e.preventDefault();
+    var type = stepEl.getAttribute('data-type');
+    if(type==='form'){ if(validateStep1()) next(); return; }
+    if(type==='optional'){
+      data.spielstaerke = document.getElementById('f_hcp').value.trim();
+      data.anmerkungen = document.getElementById('f_notes').value.trim();
+      submitAll(); return;
+    }
+    if(stepAnswered(stepEl)) next();
+  });
+
+  // ---- POST helpers ----
+  function postForm(params){
+    var body = new URLSearchParams(params).toString();
+    return fetch(FORM_URL, {
+      method:"POST", mode:"no-cors",
+      headers:{"Content-Type":"application/x-www-form-urlencoded"},
+      body: body
+    });
+  }
+  function sendPartial(){
+    if(partialSent) return;
+    partialSent = true;
+    var p = {};
+    p[ENTRY.vorname] = data.vorname || "";
+    p[ENTRY.nachname] = data.nachname || "";
+    p[ENTRY.email] = data.email || "";
+    p[ENTRY.anmerkungen] = "PARTIAL - Formular noch nicht abgeschlossen";
+    try{ postForm(p).catch(function(){}); }catch(e){}
+  }
+  function buildFull(){
+    data.reisezeitraum = composeTravel() || data.reisezeitraum || "";
+    var p = {};
+    p[ENTRY.vorname] = data.vorname || "";
+    p[ENTRY.nachname] = data.nachname || "";
+    p[ENTRY.email] = data.email || "";
+    p[ENTRY.reisezeitraum] = data.reisezeitraum || "";
+    p[ENTRY.reisedauer] = data.reisedauer || "";
+    p[ENTRY.abflughafen] = data.abflughafen || "";
+    p[ENTRY.golffrequenz] = data.golffrequenz || "";
+    p[ENTRY.interessen] = data.interessen || "";
+    p[ENTRY.reisebegleitung] = data.reisebegleitung || "";
+    p[ENTRY.mobilitaet] = data.mobilitaet || "";
+    p[ENTRY.spielstaerke] = data.spielstaerke || "";
+    p[ENTRY.budget] = data.budget || "";
+    p[ENTRY.anmerkungen] = data.anmerkungen || "";
+    return p;
+  }
+  function submitAll(){
+    var btn = document.querySelector('[data-submit]');
+    if(btn){ btn.disabled = true; btn.textContent = "Wird gesendet ..."; }
+    var params = buildFull();
+    try{
+      postForm(params).then(function(){ goSuccess(); }).catch(function(){ showFallback(); goSuccess(); });
+    }catch(e){ showFallback(); goSuccess(); }
+    // safety: no-cors gives opaque response; also show success after brief delay if promise stalls
+    setTimeout(function(){ if(!successScreen.classList.contains('active')) goSuccess(); }, 2500);
+  }
+  function showFallback(){
+    var n = document.getElementById('successNote');
+    n.hidden = false;
+    n.textContent = "Falls Ihr Plan wider Erwarten nicht ankommt, schreiben Sie uns kurz an info@golfausflug.de, wir kümmern uns persönlich darum.";
+  }
+
+  // hero CTA -> focus first field
+  document.getElementById('hero-cta').addEventListener('click', function(){
+    setTimeout(function(){ var f=document.getElementById('f_vorname'); if(f) f.focus(); }, 500);
+  });
+
+  show(0);
+})();
+</script>
