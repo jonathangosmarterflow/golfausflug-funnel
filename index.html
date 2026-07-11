@@ -8,11 +8,12 @@
 <meta property="og:title" content="Ihre persönliche Südafrika-Golfreise. In 2 Minuten geplant.">
 <meta property="og:description" content="Beantworten Sie ein paar Fragen und erhalten Sie kostenlos Ihren individuellen Reiseplan: Golfplätze, Safari, Weinregion, Hotels und Preisrahmen.">
 <meta property="og:site_name" content="goHartl golftours">
-<meta property="og:image" content="assets/hero-1.jpg">
+<meta property="og:image" content="assets/hero.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%B3%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
 
 <style>
 :root{
@@ -257,6 +258,67 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
   .step,.hero-media .card-img,#screen-success{animation:none !important; transition:none !important; transform:none !important}
   .progress-fill{transition:none}
 }
+
+/* ---- Free-value badge (hero) ---- */
+.free-badge{
+  display:inline-flex; align-items:center; gap:9px; flex-wrap:wrap;
+  font-family:var(--body); font-weight:700; font-size:15px; color:var(--golf-dark);
+  background:var(--white); border:1.5px solid var(--golf-green); border-radius:100px;
+  padding:8px 16px; margin-bottom:18px; box-shadow:0 4px 14px rgba(153,195,55,.22);
+}
+.free-badge .tick{color:var(--golf-moss); font-weight:700}
+.free-badge .sep{color:var(--sage)}
+
+/* ---- Privacy note (wizard step 1) ---- */
+.privacy-note{font-size:13.5px; line-height:1.5; color:var(--muted); margin:14px 0 0; display:flex; gap:8px; align-items:flex-start}
+.privacy-note a{color:var(--teal-mid)}
+
+/* ---- Photo strip (Golf / Safari / Wein) ---- */
+.photo-strip{padding:8px 0 52px}
+.strip-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+.strip-card{position:relative; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-soft); border:1px solid #E7EEDA}
+.strip-card img{aspect-ratio:4/3; object-fit:cover; width:100%; height:100%; transition:transform .5s ease}
+.strip-card:hover img{transform:scale(1.05)}
+.strip-card .cap{
+  position:absolute; left:0; right:0; bottom:0; padding:26px 18px 14px 18px;
+  background:linear-gradient(to top, rgba(66,86,18,.82), rgba(66,86,18,0));
+  color:var(--white); font-family:var(--head); font-weight:700; font-size:20px;
+}
+.strip-card .cap small{display:block; font-family:var(--body); font-weight:400; font-size:13.5px; color:#EAF2D6; margin-top:2px}
+
+/* ---- Testimonial band ---- */
+.testimonial{background:var(--white); padding:50px 0; border-top:1px solid #EDEFE6; border-bottom:1px solid #EDEFE6}
+.testimonial .wrap{max-width:760px; text-align:center}
+.testimonial .stars{color:var(--safari-gold); font-size:20px; letter-spacing:3px; margin-bottom:16px}
+.testimonial blockquote{
+  margin:0; font-family:var(--head); font-size:clamp(21px,3vw,27px); line-height:1.4; color:var(--golf-dark); font-style:italic;
+}
+.testimonial .attrib{margin-top:18px; font-family:var(--body); font-size:15.5px; color:var(--muted); font-weight:600}
+.testimonial .attrib span{color:var(--golf-moss)}
+
+/* ---- Success tip ---- */
+.success-tip{
+  font-size:15.5px; color:var(--golf-dark); background:var(--green-pale); border:1px solid #D6E7B4;
+  border-radius:12px; padding:14px 18px; margin:20px auto 4px; max-width:46ch; text-align:left;
+  display:flex; gap:9px; align-items:flex-start;
+}
+.success-tip .bulb{flex:0 0 auto}
+
+/* ---- Sticky mobile CTA ---- */
+.sticky-cta{
+  position:fixed; left:0; right:0; bottom:0; z-index:50; display:none;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(249,250,245,.97); backdrop-filter:saturate(1.2) blur(6px);
+  border-top:1px solid var(--line); box-shadow:0 -6px 20px rgba(66,86,18,.10);
+  transform:translateY(120%); transition:transform .3s ease;
+}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .btn{width:100%; min-height:52px; font-size:17px}
+.sticky-cta .sub{display:block; text-align:center; font-size:12.5px; color:var(--muted); margin-top:6px}
+
+@media (max-width:860px){ .strip-grid{grid-template-columns:1fr; max-width:460px; margin:0 auto} }
+@media (max-width:640px){ .sticky-cta{display:block} }
+@media (prefers-reduced-motion:reduce){ .sticky-cta{transition:none} .strip-card img{transition:none} }
 </style>
 
 <header class="site-header">
@@ -275,6 +337,11 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
         <span class="eyebrow">&#9971; Ihr Reiseplan &middot; kostenlos &amp; individuell</span>
         <h1>Ihre persönliche Südafrika-Golfreise. In 2 Minuten geplant.</h1>
         <p class="lead">Beantworten Sie ein paar Fragen und erhalten Sie kostenlos Ihren individuellen Reiseplan: Golfplätze, Safari, Weinregion, Hotels und Preisrahmen. Zusammengestellt aus über 20 Jahren Südafrika-Erfahrung.</p>
+        <div class="free-badge">
+          <span class="tick">&#10003;</span> 100 % kostenlos
+          <span class="sep">&middot;</span> <span class="tick">&#10003;</span> Fertig in 2 Minuten
+          <span class="sep">&middot;</span> <span class="tick">&#10003;</span> Unverbindlich
+        </div>
         <a href="#planer" class="btn btn-primary" id="hero-cta">Jetzt kostenlosen Reiseplan erstellen &rarr;</a>
         <div class="trust-line">
           <span>&#9971; Persönlich geprüft</span>
@@ -284,7 +351,7 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
       </div>
       <div class="hero-media">
         <div class="card-img">
-          <img src="assets/hero-1.jpg" alt="Golfplatz an der Küste Südafrikas, Pinnacle Point" loading="eager" width="1024" height="576">
+          <img src="assets/hero.jpg" alt="Golfplatz auf den Klippen über dem Meer, Pinnacle Point, Südafrika" loading="eager" fetchpriority="high" width="1600" height="900">
         </div>
         <div class="badge">
           <span class="dot">&#127942;</span>
@@ -324,6 +391,7 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
             <label for="f_email">E-Mail</label>
             <input type="email" id="f_email" autocomplete="email" placeholder="name@beispiel.de" inputmode="email">
             <div class="err" id="err_email">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+            <p class="privacy-note">Mit dem Absenden stimmen Sie zu, dass wir Ihnen Ihren Reiseplan und passende Reise-Angebote per E-Mail senden. Abmeldung jederzeit möglich. Mehr dazu in unserer <a href="https://www.golfausflug.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
           </div>
           <div class="wizard-actions">
             <button type="button" class="btn btn-primary" data-next>Weiter</button>
@@ -480,7 +548,8 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
             <svg viewBox="0 0 52 52"><path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M14 27l8 8 16-18"></path></svg>
           </div>
           <h2>Vielen Dank, <span id="successName">Sie</span>! Ihr persönlicher Südafrika-Reiseplan wird jetzt erstellt.</h2>
-          <p>Sie erhalten ihn in wenigen Minuten per E-Mail (Absender: Golfausflug Südafrika-Reiseplaner). Schauen Sie ggf. im Spam-Ordner nach. Antworten Sie einfach auf die E-Mail, um Ihren Plan anzupassen, so oft Sie möchten.</p>
+          <p>Sie erhalten ihn in wenigen Minuten per E-Mail (Absender: Golfausflug Südafrika-Reiseplaner). Schauen Sie ggf. im Spam-Ordner nach.</p>
+          <div class="success-tip"><span class="bulb">&#128161;</span> <span>Tipp: Antworten Sie einfach auf die E-Mail mit Ihren Wünschen, die Planung passt sich sofort an.</span></div>
           <div class="success-note" id="successNote" hidden></div>
           <a href="https://www.golfausflug.de/alle-golfreisen/" target="_blank" rel="noopener" class="btn btn-ghost">Unsere begleiteten Gruppenreisen ansehen</a>
         </div>
@@ -512,6 +581,40 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
     </div>
   </section>
 
+  <!-- PHOTO STRIP -->
+  <section class="photo-strip">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="rule"></div>
+        <h2>Golf, Safari und Genuss, alles in einer Reise</h2>
+        <p>Ein Vorgeschmack auf das, was Ihr persönlicher Plan verbinden kann.</p>
+      </div>
+      <div class="strip-grid">
+        <div class="strip-card">
+          <img src="assets/hero-1.jpg" alt="Golfer am Abschlag mit Blick auf das Meer, Pinnacle Point" loading="lazy" width="1280" height="720">
+          <div class="cap">Golf<small>Weltklasse-Plätze an Küste und Kap</small></div>
+        </div>
+        <div class="strip-card">
+          <img src="assets/safari.jpg" alt="Safari-Jeep und Giraffe in Südafrika" loading="lazy" width="1024" height="683">
+          <div class="cap">Safari<small>Die Big Five hautnah erleben</small></div>
+        </div>
+        <div class="strip-card">
+          <img src="assets/wein.jpg" alt="Golfplatz in der Weinregion vor Bergkulisse" loading="lazy" width="1200" height="960">
+          <div class="cap">Wein &amp; Genuss<small>Weingüter und gute Küche am Kap</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="wrap">
+      <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <blockquote>&#8222;Ganz herzlichen Dank für die professionelle Organisation. Wir konnten bei wunderschönem Wetter ein paar herrliche Tage auf tollen Golfplätzen verbringen. Diese Reise wird uns noch lange in Erinnerung bleiben.&#8220;</blockquote>
+      <div class="attrib">Chatrina P. &middot; <span>goHartl-Reisegast</span></div>
+    </div>
+  </section>
+
   <!-- GROUP TRIP STRIP -->
   <section class="group-strip">
     <div class="wrap">
@@ -522,7 +625,7 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
       </div>
       <div class="trip-grid">
         <a class="trip-card" href="https://www.golfausflug.de/golfreisen/golf-wein-wale-safari/" target="_blank" rel="noopener">
-          <div class="thumb"><img src="assets/group.jpg" alt="Golfgruppe in Südafrika" loading="lazy"></div>
+          <div class="thumb"><img src="assets/group.jpg" alt="Golfgruppe in Südafrika" loading="lazy" width="1024" height="719"></div>
           <div class="body">
             <h3>Golf, Wein, Wale &amp; Safari</h3>
             <div class="meta">14 Tage &middot; Kap-Region &amp; Garden Route</div>
@@ -531,7 +634,7 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
           </div>
         </a>
         <a class="trip-card" href="https://www.golfausflug.de/golfreisen/golf-wein-safari-gardenroute-iii/" target="_blank" rel="noopener">
-          <div class="thumb"><img src="assets/hero-1.jpg" alt="Küsten-Golfplatz an der Garden Route" loading="lazy"></div>
+          <div class="thumb"><img src="assets/wein.jpg" alt="Golfplatz in der Weinregion an der Garden Route" loading="lazy" width="1200" height="960"></div>
           <div class="body">
             <h3>Golf, Wein &amp; Safari Gardenroute</h3>
             <div class="meta">14 Tage &middot; Garden Route &amp; Safari</div>
@@ -540,7 +643,7 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
           </div>
         </a>
         <a class="trip-card" href="https://www.golfausflug.de/golfreisen/safari-golfreise-zum-krugerpark/" target="_blank" rel="noopener">
-          <div class="thumb"><img src="assets/safari.jpg" alt="Safari im Krügerpark, Südafrika" loading="lazy"></div>
+          <div class="thumb"><img src="assets/safari.jpg" alt="Safari im Krügerpark, Südafrika" loading="lazy" width="1024" height="683"></div>
           <div class="body">
             <h3>Von Sun City zum Krügerpark</h3>
             <div class="meta">14 Tage &middot; Safari-Premium-Route</div>
@@ -554,6 +657,12 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
   </section>
 
 </main>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <a href="#planer" class="btn btn-primary" id="sticky-cta-btn">Kostenlosen Reiseplan erstellen &rarr;</a>
+  <span class="sub">100 % kostenlos &middot; fertig in 2 Minuten</span>
+</div>
 
 <!-- FOOTER -->
 <footer class="site-footer">
@@ -825,6 +934,26 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
   document.getElementById('hero-cta').addEventListener('click', function(){
     setTimeout(function(){ var f=document.getElementById('f_vorname'); if(f) f.focus(); }, 500);
   });
+
+  // sticky mobile CTA: show after hero scrolls away, hide while the wizard is in view
+  (function(){
+    var sticky = document.getElementById('stickyCta');
+    if(!sticky) return;
+    var heroEl = document.querySelector('.hero');
+    var wizardEl = document.getElementById('wizard');
+    var heroVisible = true, wizardVisible = false;
+    function update(){
+      var showIt = !heroVisible && !wizardVisible;
+      sticky.classList.toggle('show', showIt);
+      sticky.setAttribute('aria-hidden', showIt ? 'false' : 'true');
+    }
+    if('IntersectionObserver' in window && heroEl && wizardEl){
+      new IntersectionObserver(function(e){ heroVisible = e[0].isIntersecting; update(); }, {threshold:0}).observe(heroEl);
+      new IntersectionObserver(function(e){ wizardVisible = e[0].isIntersecting; update(); }, {threshold:0}).observe(wizardEl);
+    }
+    var sb = document.getElementById('sticky-cta-btn');
+    if(sb){ sb.addEventListener('click', function(){ setTimeout(function(){ var f=document.getElementById('f_vorname'); if(f) f.focus(); }, 500); }); }
+  })();
 
   show(0);
 })();
