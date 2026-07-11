@@ -319,6 +319,75 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
 @media (max-width:860px){ .strip-grid{grid-template-columns:1fr; max-width:460px; margin:0 auto} }
 @media (max-width:640px){ .sticky-cta{display:block} }
 @media (prefers-reduced-motion:reduce){ .sticky-cta{transition:none} .strip-card img{transition:none} }
+
+/* ==== Design-Veredelung (Fable) — premium travel refinements ==== */
+/* warm atmospheric background instead of flat cream */
+body{
+  background:
+    radial-gradient(1100px 500px at 85% -80px, rgba(225,184,99,.14), transparent 62%),
+    radial-gradient(900px 520px at -120px 240px, rgba(153,195,55,.10), transparent 60%),
+    var(--cream);
+}
+/* signature gold hairline under the sticky header */
+.site-header{border-bottom:none; box-shadow:0 1px 0 var(--line)}
+.site-header::after{
+  content:""; display:block; height:2px;
+  background:linear-gradient(90deg, transparent, var(--safari-gold) 18%, var(--gold-dark) 50%, var(--safari-gold) 82%, transparent);
+  opacity:.75;
+}
+/* typographic luxury */
+h1,h2,h3{letter-spacing:-.012em; text-wrap:balance}
+.hero h1{font-size:clamp(36px, 5.2vw, 56px)}
+.hero h1 em{
+  font-style:italic; color:var(--gold-dark); white-space:nowrap;
+  background:linear-gradient(to top, rgba(225,184,99,.32) 0 .16em, transparent .16em);
+  padding:0 .04em; border-radius:2px;
+}
+.eyebrow{letter-spacing:.14em; font-size:12.5px; color:var(--gold-dark); background:rgba(225,184,99,.14); border-color:rgba(225,184,99,.45)}
+/* buttons with depth + gold focus */
+.btn-primary{
+  background:linear-gradient(180deg, #A6CE45, var(--golf-green) 55%, #8CB431);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35), 0 6px 16px rgba(110,140,30,.35);
+}
+.btn-primary:hover{background:linear-gradient(180deg, #718C2C, var(--golf-moss)); color:var(--white)}
+.btn:focus-visible{outline:3px solid rgba(225,184,99,.7); outline-offset:2px}
+/* hero photo: soft gold aura + refined badge */
+.hero-media::before{
+  content:""; position:absolute; inset:8% -6% -10% -6%; z-index:-1; border-radius:32px;
+  background:radial-gradient(60% 60% at 55% 45%, rgba(225,184,99,.28), transparent 72%);
+  filter:blur(6px);
+}
+.hero-media .badge{border-color:rgba(225,184,99,.55); box-shadow:0 8px 22px rgba(116,85,22,.14)}
+/* wizard card: gold-to-green crest band + softer elevation */
+.wizard{box-shadow:0 18px 44px rgba(66,86,18,.13); border-color:#E7EBDC}
+.wizard::before{
+  content:""; display:block; height:5px;
+  background:linear-gradient(90deg, var(--safari-gold), var(--golf-green) 55%, var(--golf-moss));
+}
+.progress-fill{background:linear-gradient(90deg, var(--golf-green), var(--golf-moss))}
+/* section rules echo the gold signature */
+.section-head .rule{
+  width:64px; height:2px; border-radius:2px;
+  background:linear-gradient(90deg, transparent, var(--gold-dark), transparent);
+}
+/* cards: warmer hover, hairline gold on trip prices */
+.b-card:hover,.trip-card:hover{border-color:rgba(225,184,99,.55)}
+.trip-card .price{color:var(--golf-dark)}
+.trip-card .go{color:var(--golf-moss)}
+/* testimonial: oversized serif quote mark */
+.testimonial blockquote{position:relative}
+.testimonial blockquote::before{
+  content:"\201E"; position:absolute; top:-38px; left:50%; transform:translateX(-50%);
+  font-family:var(--head); font-size:84px; line-height:1; color:rgba(225,184,99,.55); font-style:normal;
+}
+/* footer: gold hairline crown */
+.site-footer{position:relative}
+.site-footer::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg, transparent, var(--safari-gold) 30%, var(--safari-gold) 70%, transparent);
+  opacity:.6;
+}
+@media (prefers-reduced-motion:reduce){ .hero-media::before{filter:none} }
 </style>
 
 <header class="site-header">
@@ -335,7 +404,7 @@ input.invalid{border-color:var(--red); box-shadow:0 0 0 3px rgba(171,32,57,.12)}
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">&#9971; Ihr Reiseplan &middot; kostenlos &amp; individuell</span>
-        <h1>Ihre persönliche Südafrika-Golfreise. In 2 Minuten geplant.</h1>
+        <h1>Ihre <em>persönliche</em> Südafrika-Golfreise. In 2 Minuten geplant.</h1>
         <p class="lead">Beantworten Sie ein paar Fragen und erhalten Sie kostenlos Ihren individuellen Reiseplan: Golfplätze, Safari, Weinregion, Hotels und Preisrahmen. Zusammengestellt aus über 20 Jahren Südafrika-Erfahrung.</p>
         <div class="free-badge">
           <span class="tick">&#10003;</span> 100 % kostenlos
