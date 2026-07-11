@@ -1,0 +1,279 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ihr persönlicher Südafrika-Reiseplan | goHartl golftours</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%B3%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --golf-green:#99C337; --golf-moss:#637E26; --golf-dark:#425612;
+  --sage:#BFCF9C; --green-pale:#E5F2CE;
+  --safari-gold:#E1B863; --gold-dark:#745516;
+  --teal-mid:#2F758D;
+  --cream:#F9FAF5; --ink:#212529; --ink-soft:#333; --muted:#6C757D; --line:#DEE2E6; --white:#fff;
+  --head:"Judson", Georgia, "Times New Roman", serif;
+  --body:"Source Sans Pro", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; color:var(--ink-soft); font-family:var(--body); font-size:17.5px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  background:
+    radial-gradient(1000px 460px at 90% -60px, rgba(225,184,99,.16), transparent 60%),
+    radial-gradient(800px 480px at -100px 300px, rgba(153,195,55,.10), transparent 60%),
+    var(--cream);
+}
+h1,h2,h3{font-family:var(--head); color:var(--golf-dark); line-height:1.16; font-weight:700; margin:0 0 .4em; letter-spacing:-.012em}
+p{margin:0 0 1em}
+a{color:var(--teal-mid)}
+img{max-width:100%; display:block}
+.wrap{max-width:880px; margin:0 auto; padding:0 22px}
+
+/* ---- Kopfband (Reisedokument) ---- */
+.doc-band{background:var(--golf-dark); color:#E7EED9; padding:20px 0 18px; position:relative}
+.doc-band::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:2px;
+  background:linear-gradient(90deg, transparent, var(--safari-gold) 20%, var(--safari-gold) 80%, transparent);
+}
+.doc-band .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.doc-band img{max-height:46px; width:auto}
+.doc-meta{text-align:right; font-size:13.5px; color:#CBD7B2; line-height:1.5}
+.doc-meta b{display:block; color:var(--safari-gold); font-family:var(--body); font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; font-size:12px}
+
+/* ---- Titelblock ---- */
+.plan-head{padding:52px 0 8px; text-align:center}
+.plan-eyebrow{
+  display:inline-flex; align-items:center; gap:8px; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; font-size:12.5px; color:var(--gold-dark);
+  background:rgba(225,184,99,.14); border:1px solid rgba(225,184,99,.45);
+  padding:7px 16px; border-radius:100px; margin-bottom:20px;
+}
+.plan-head h1{font-size:clamp(32px, 5vw, 48px); text-wrap:balance}
+.plan-head h1 em{font-style:italic; color:var(--gold-dark)}
+.meta-row{
+  display:flex; justify-content:center; gap:10px 26px; flex-wrap:wrap;
+  margin:18px 0 0; font-size:16px; color:var(--golf-moss); font-weight:600;
+}
+.meta-row span{display:inline-flex; align-items:center; gap:8px}
+.gold-rule{width:64px; height:2px; margin:30px auto 0;
+  background:linear-gradient(90deg, transparent, var(--gold-dark), transparent)}
+
+/* ---- Highlights ---- */
+.hl-row{display:flex; justify-content:center; flex-wrap:wrap; gap:10px; padding:26px 0 8px}
+.hl-chip{
+  font-size:15.5px; font-weight:600; color:var(--golf-dark); background:var(--white);
+  border:1.5px solid var(--sage); border-radius:100px; padding:8px 16px;
+}
+
+/* ---- Reiseverlauf (Timeline) ---- */
+.section{padding:40px 0 8px}
+.section > .wrap > h2{font-size:clamp(24px,3.4vw,31px); text-align:center; margin-bottom:6px}
+.section .sub{font-size:16px; color:var(--muted); text-align:center; max-width:52ch; margin:0 auto 30px}
+.timeline{list-style:none; margin:0; padding:0; position:relative; max-width:680px; margin-inline:auto}
+.timeline::before{
+  content:""; position:absolute; left:47px; top:12px; bottom:12px; width:2px;
+  background:linear-gradient(to bottom, var(--safari-gold), var(--sage) 30%, var(--sage) 70%, var(--safari-gold));
+  opacity:.7;
+}
+.day{display:flex; gap:20px; padding:0 0 26px; position:relative}
+.d-marker{
+  flex:0 0 96px; text-align:center; background:var(--white); border:1.5px solid var(--sage);
+  border-radius:14px; padding:10px 6px 8px; height:fit-content; position:relative; z-index:1;
+  box-shadow:0 4px 14px rgba(66,86,18,.08);
+}
+.d-marker b{display:block; font-family:var(--head); font-size:17px; color:var(--golf-dark); line-height:1.1}
+.d-marker i{display:block; font-style:normal; font-size:22px; margin-top:4px}
+.d-body{background:var(--white); border:1px solid #E7EBDC; border-radius:16px; padding:16px 20px 14px;
+  box-shadow:0 4px 14px rgba(66,86,18,.06); flex:1}
+.d-body h3{font-size:19.5px; margin-bottom:.25em}
+.d-body p{font-size:16px; margin:0; color:var(--ink-soft)}
+
+/* ---- Hotels ---- */
+.hotel-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; max-width:760px; margin:0 auto}
+.hotel{
+  background:var(--white); border:1px solid #E7EBDC; border-left:4px solid var(--safari-gold);
+  border-radius:12px; padding:14px 18px; box-shadow:0 4px 14px rgba(66,86,18,.06);
+}
+.hotel b{font-family:var(--head); font-size:18px; color:var(--golf-dark); display:block}
+.hotel span{font-size:14.5px; color:var(--muted)}
+
+/* ---- Preisrahmen ---- */
+.price-card{
+  max-width:680px; margin:0 auto; background:var(--white); border-radius:20px; overflow:hidden;
+  border:1px solid #E7EBDC; box-shadow:0 14px 36px rgba(66,86,18,.12);
+}
+.price-card::before{content:""; display:block; height:5px;
+  background:linear-gradient(90deg, var(--safari-gold), var(--golf-green) 55%, var(--golf-moss))}
+.price-inner{padding:28px 30px 24px; text-align:center}
+.price-inner .label{font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-dark); margin-bottom:8px}
+.price-inner .amount{font-family:var(--head); font-size:clamp(28px,4.4vw,38px); color:var(--golf-dark); font-weight:700; line-height:1.15}
+.price-inner .note{font-size:14.5px; color:var(--muted); margin-top:8px}
+.price-cols{display:grid; grid-template-columns:1fr 1fr; border-top:1px solid #EDEFE6}
+.price-cols > div{padding:18px 22px}
+.price-cols > div + div{border-left:1px solid #EDEFE6}
+.price-cols h3{font-size:15px; font-family:var(--body); font-weight:700; letter-spacing:.06em; text-transform:uppercase}
+.price-cols .inc h3{color:var(--golf-moss)} .price-cols .exc h3{color:var(--muted)}
+.price-cols ul{list-style:none; margin:0; padding:0; font-size:15px}
+.price-cols li{padding:3px 0 3px 22px; position:relative}
+.price-cols .inc li::before{content:"\2713"; position:absolute; left:0; color:var(--golf-moss); font-weight:700}
+.price-cols .exc li::before{content:"\2013"; position:absolute; left:0; color:var(--muted)}
+
+/* ---- Hinweise ---- */
+.notes{max-width:680px; margin:0 auto; counter-reset:note}
+.notes ol{list-style:none; margin:0; padding:0}
+.notes li{
+  counter-increment:note; background:var(--white); border:1px solid #E7EBDC; border-radius:12px;
+  padding:13px 18px 13px 54px; margin-bottom:10px; font-size:15.5px; position:relative;
+  box-shadow:0 3px 10px rgba(66,86,18,.05);
+}
+.notes li::before{
+  content:counter(note); position:absolute; left:16px; top:12px; width:26px; height:26px;
+  border-radius:50%; background:rgba(225,184,99,.2); color:var(--gold-dark);
+  font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center;
+}
+
+/* ---- Antworten-CTA ---- */
+.reply-band{max-width:680px; margin:44px auto 0; text-align:center; background:var(--green-pale);
+  border:1px solid #D6E7B4; border-radius:20px; padding:30px 26px}
+.reply-band h2{font-size:clamp(22px,3vw,27px)}
+.reply-band p{max-width:46ch; margin:0 auto 1em; font-size:16px}
+.reply-band .pill{
+  display:inline-block; background:var(--white); border:1.5px solid var(--golf-green);
+  border-radius:100px; padding:10px 22px; font-weight:700; color:var(--golf-dark); font-size:16px;
+}
+
+/* ---- Gruppenreisen-Hinweis ---- */
+.alt-band{max-width:680px; margin:22px auto 0; text-align:center; font-size:15.5px; color:var(--golf-dark);
+  background:var(--white); border:1px solid #E7EEDA; border-radius:14px; padding:16px 22px}
+.alt-band b{color:var(--golf-moss)}
+.alt-band a{font-weight:700}
+
+/* ---- Fußzeile ---- */
+.doc-foot{margin-top:52px; background:var(--golf-dark); color:#CBD7B2; padding:30px 0 26px; position:relative; text-align:center}
+.doc-foot::before{content:""; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg, transparent, var(--safari-gold) 30%, var(--safari-gold) 70%, transparent); opacity:.6}
+.doc-foot img{max-height:42px; width:auto; margin:0 auto 10px}
+.doc-foot p{font-size:14px; margin:0 0 .3em}
+.doc-foot a{color:var(--safari-gold); text-decoration:none}
+.doc-foot .fine{font-size:12.5px; color:#A9B891; margin-top:10px}
+
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .timeline::before{left:38px}
+  .d-marker{flex-basis:78px; padding:8px 4px 6px}
+  .d-marker b{font-size:15px} .d-marker i{font-size:18px}
+  .price-cols{grid-template-columns:1fr}
+  .price-cols > div + div{border-left:none; border-top:1px solid #EDEFE6}
+  .doc-meta{text-align:left}
+}
+/* ---- Druck / PDF ---- */
+@media print{
+  body{background:var(--white); font-size:13px}
+  .doc-band,.doc-foot{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  .day,.hotel,.price-card,.notes li{box-shadow:none; break-inside:avoid}
+  .reply-band{break-inside:avoid}
+  a{text-decoration:none; color:var(--golf-dark)}
+}
+</style>
+
+<div class="doc-band">
+  <div class="wrap">
+    <img src="../assets/logo-white.png" alt="goHartl golftours">
+    <div class="doc-meta">
+      <b>Persönlicher Reiseplan</b>
+      Plan-Nr. ZA-2WFCZ &middot; erstellt am 11. Juli 2026
+    </div>
+  </div>
+</div>
+
+<header class="plan-head wrap">
+  <span class="plan-eyebrow">&#9971; Erstellt für Gerd</span>
+  <h1>Golf, Big Five und Garden Route im Februar</h1>
+  <div class="meta-row">
+    <span>&#128197; Februar 2027</span>
+    <span>&#8987; 14 Tage</span>
+    <span>&#9992;&#65039; ab Frankfurt</span>
+    <span>&#129333; Mit Freunden</span>
+  </div>
+  <div class="gold-rule"></div>
+</header>
+
+<div class="hl-row wrap">
+  <span class="hl-chip">⛳ 7 Golfrunden auf Top-Plätzen</span><span class="hl-chip">🦁 Big-Five-Safari im Gondwana Private Game Reserve</span><span class="hl-chip">🚐 Ganze Garden Route bis Knysna</span><span class="hl-chip">🍷 Weinregion Stellenbosch &amp; Franschhoek</span><span class="hl-chip">🌆 Kapstadt, Tafelberg &amp; Kap der Guten Hoffnung</span><span class="hl-chip">🏖 Klippengolf am Indischen Ozean</span>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Ihr Reiseverlauf, Tag für Tag</h2>
+    <p class="sub">Golf in entspanntem Rhythmus, dazwischen die schönsten Seiten Südafrikas. Alles bewusst ohne Hetze geplant.</p>
+    <ol class="timeline">
+      <li class="day"><span class="d-marker"><b>Tag 1</b><i>✈️</i></span><div class="d-body"><h3>Anreise ab Frankfurt</h3><p>Nachtflug Richtung Kapstadt. Der internationale Flug ist nicht inklusive.</p></div></li><li class="day"><span class="d-marker"><b>Tag 2</b><i>🌆</i></span><div class="d-body"><h3>Ankunft in Kapstadt</h3><p>Mietwagen übernehmen und gemütlich nach Somerset West fahren. Ankommen und durchatmen im Albourne Boutique Guesthouse.</p></div></li><li class="day"><span class="d-marker"><b>Tag 3</b><i>⛳</i></span><div class="d-body"><h3>Golf Erinvale</h3><p>Erste Runde auf dem Erinvale Golf Club, dem Gary-Player-Championship-Platz direkt in Somerset West.</p></div></li><li class="day"><span class="d-marker"><b>Tag 4</b><i>🌆</i></span><div class="d-body"><h3>Kapstadt entdecken</h3><p>Tafelberg, V&amp;A Waterfront und die Fahrt zum Kap der Guten Hoffnung auf der Kap-Halbinsel.</p></div></li><li class="day"><span class="d-marker"><b>Tag 5</b><i>⛳</i></span><div class="d-body"><h3>Golf Clovelly</h3><p>Runde auf dem Clovelly Country Club, dem landschaftlichen Parkland-Platz nahe der False Bay.</p></div></li><li class="day"><span class="d-marker"><b>Tag 6</b><i>🍷</i></span><div class="d-body"><h3>Weinregion</h3><p>Ausflug rund um Stellenbosch und Franschhoek mit Weinproben, Boschendal und gutem Essen.</p></div></li><li class="day"><span class="d-marker"><b>Tag 7</b><i>⛳</i></span><div class="d-body"><h3>Golf De Zalze</h3><p>Golf auf dem De Zalze Golf Club (Kleine Zalze), dem beliebten Weingut-Platz zwischen den Reben.</p></div></li><li class="day"><span class="d-marker"><b>Tag 8</b><i>🚐</i></span><div class="d-body"><h3>Fahrt zur Garden Route</h3><p>Auf der Garden Route nach Mossel Bay ins Protea Hotel Mossel Bay by Marriott. Küste, Weite und Meer.</p></div></li><li class="day"><span class="d-marker"><b>Tag 9</b><i>🏖</i></span><div class="d-body"><h3>Golf Pinnacle Point</h3><p>Spektakulärer Klippen-Kurs hoch über dem Indischen Ozean. Ein Cart ist hier meist erforderlich.</p></div></li><li class="day"><span class="d-marker"><b>Tag 10</b><i>🦁</i></span><div class="d-body"><h3>Big-Five-Safari Gondwana</h3><p>Pirschfahrt im Gondwana Private Game Reserve mit Vollpension und einer Nacht mitten in der Wildnis.</p></div></li><li class="day"><span class="d-marker"><b>Tag 11</b><i>⛳</i></span><div class="d-body"><h3>Golf George</h3><p>Weiter nach George und Golf auf dem klassischen George Golf Club, dem Golf-Herz der Garden Route.</p></div></li><li class="day"><span class="d-marker"><b>Tag 12</b><i>⛳</i></span><div class="d-body"><h3>Golf Simola, Knysna</h3><p>Kurze Fahrt nach Knysna und Golf auf dem Simola Golf Club (Jack Nicklaus) mit herrlichem Lagunenblick.</p></div></li><li class="day"><span class="d-marker"><b>Tag 13</b><i>⛳</i></span><div class="d-body"><h3>Golf Pezula &amp; Abschied</h3><p>Letzte Runde auf dem dramatischen Ozean- und Klippen-Platz Pezula, abends ein gemeinsames Abschiedsessen.</p></div></li><li class="day"><span class="d-marker"><b>Tag 14</b><i>✈️</i></span><div class="d-body"><h3>Heimreise</h3><p>Rückfahrt zum Flughafen und Heimflug mit vielen schönen Erinnerungen.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Ihre Unterkünfte</h2>
+    <p class="sub">Handverlesene Häuser, in denen sich unsere Gäste seit Jahren wohlfühlen.</p>
+    <div class="hotel-grid">
+      <div class="hotel"><b>Albourne Boutique Guesthouse</b><span>Somerset West · 4★ · 6 Nächte</span></div><div class="hotel"><b>Protea Hotel Mossel Bay by Marriott</b><span>Mossel Bay · 4★ · 2 Nächte</span></div><div class="hotel"><b>Gondwana Private Game Reserve</b><span>Garden Route · 4★ Vollpension · 1 Nacht</span></div><div class="hotel"><b>Hawthorn Boutique Hotel</b><span>George · 4★ · 1 Nacht</span></div><div class="hotel"><b>The Loft Boutique Hotel</b><span>Knysna · 4,5★ · 2 Nächte</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Grober Preisrahmen</h2>
+    <div class="price-card">
+      <div class="price-inner">
+        <div class="label">Ihre Reise, realistisch kalkuliert</div>
+        <div class="amount">4.100 bis 5.000 € pro Person</div>
+        <div class="note">ohne internationale Flüge, inkl. Mietwagen. Der genaue Preis hängt von Saison, Hotels und Verfügbarkeit ab.</div>
+      </div>
+      <div class="price-cols">
+        <div class="inc">
+          <h3>Enthalten</h3>
+          <ul><li>Übernachtungen in den genannten Hotels mit Frühstück</li><li>Alle Greenfees der ausgeschriebenen Runden</li><li>Big-Five-Safari im Gondwana Private Game Reserve mit Vollpension und Pirschfahrt</li><li>Mietwagen für die gesamte Reise</li><li>Gemeinsames Abschiedsessen in Knysna</li></ul>
+        </div>
+        <div class="exc">
+          <h3>Nicht enthalten</h3>
+          <ul><li>Internationale Flüge</li><li>Abendessen (außer dem Abschiedsessen)</li><li>Getränke</li><li>Cart-, Trolley- und Caddy-Gebühren (zum Beispiel Cart am Pinnacle Point)</li><li>Trinkgelder, Eintritte und persönliche Ausgaben</li><li>Leihschläger (optional) und Einzelzimmer gegen Zuschlag</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Worauf Sie achten sollten</h2>
+    <p class="sub">Kleine Dinge, die eine Südafrika-Reise deutlich angenehmer machen.</p>
+    <div class="notes"><ol>
+      <li>Beste Reisezeit ist Oktober bis April, Ihr Februar liegt also ideal für angenehme Temperaturen und gute Platzbedingungen.</li><li>Voraussetzung fürs Golfen ist Handicap 54 beziehungsweise die Platzreife. Bei uns steht der Spaß vor dem Wettkampf.</li><li>In Südafrika herrscht Linksverkehr, planen Sie für die Etappen der Garden Route ausreichend Zeit ein.</li><li>Alkohol am Steuer wird streng geahndet, bei Weinproben empfiehlt sich ein fahrender Begleiter in der Gruppe.</li><li>Leichte Sommerkleidung genügt, für die kühleren Abende und die Safari packen Sie eine Jacke ein.</li><li>Elektro-Trolleys sind auf südafrikanischen Plätzen nicht erlaubt, Leihschläger sind optional möglich.</li>
+    </ol></div>
+
+    <div class="reply-band">
+      <h2>Ihr Plan, Ihre Wünsche</h2>
+      <p>Mehr Safari, weniger Golf, ein anderes Budget? Antworten Sie einfach auf Ihre E-Mail und der Plan wird für Sie angepasst, so oft Sie möchten.</p>
+      <span class="pill">&#9993;&#65039; Einfach auf die E-Mail antworten</span>
+    </div>
+
+    <div class="alt-band">
+      <b>Lieber alles aus einer Hand?</b> Auf unseren begleiteten Gruppenreisen fahren Sie im komfortablen Bus statt selbst zu lenken, genießen Weinproben ohne Fahrerpflicht und reisen in bester Gesellschaft, begleitet von PGA-Professional Gerd Schönberg. <a href="https://www.golfausflug.de/alle-golfreisen/" target="_blank" rel="noopener">Aktuelle Gruppenreisen ansehen &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer class="doc-foot">
+  <div class="wrap">
+    <img src="../assets/logo-white.png" alt="goHartl golftours">
+    <p>goHartl golftours &middot; Gerd Schönberg &middot; <a href="https://www.golfausflug.de/">golfausflug.de</a></p>
+    <p><a href="mailto:info@golfausflug.de">info@golfausflug.de</a> &middot; +49 (8532) 92 640 18</p>
+    <p class="fine">Dieser Reiseplan wurde individuell aus echten goHartl-Reisen zusammengestellt. Alle Angaben ohne Gewähr, Plan-Nr. ZA-2WFCZ.</p>
+  </div>
+</footer>
